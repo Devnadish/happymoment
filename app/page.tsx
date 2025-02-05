@@ -8,7 +8,6 @@ import Logo from "../components/Icons/Logo";
 
 async function Page() {
   const images = await GETIMAGES();
-  console.log(images);
   return (
     <main className="mx-auto max-w-[1960px] p-4 bg-gradient-to-r from-blue-900 via-blue-500 to-blue-200">
       <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
