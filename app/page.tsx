@@ -35,7 +35,10 @@ async function Page() {
         </div>
         <div className="flex gap-4 flex-wrap">
           {images.map(({ id, public_id, format, blurDataUrl }) => (
-            <div className="drop-shadow-2xl   rounded-lg overflow-hidden p-1 shadow-xl">
+            <div
+              className="drop-shadow-2xl   rounded-lg overflow-hidden p-1 shadow-xl"
+              key={public_id}
+            >
               <Image
                 alt="Next.js Conf photo"
                 className="transform rounded-lg brightness-90 transition group-hover:scale-50  "
